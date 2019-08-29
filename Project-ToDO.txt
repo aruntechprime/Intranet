@@ -1,0 +1,76 @@
+Web App Changes Estimation [War file name : PennColorIntranet]  Intranet.
+---------------------------
+ 1. There will not be a login page at the beginning of the homepage, 
+    instead there will be a single landing page which will have links to follow to (Quality Mgmt System) OR Regaffairs.
+           [1 hr]
+ 2. Once the user clicks to follow to either of the above system's home page, based on their AD login, 
+    the system will identify if the user is a regular user or an Admin user. and the additional menu(s)
+	will be displayed for the Admin user. 
+	   [2 hrs]
+
+ 3. In the search page, the grid shall populate 50 file names along with the option to navigate to the next set
+    of 50 until all the files are displayed according to the search criteria.
+    For Quality Mgmt System, there will be one drop down to select the Department and the Forms or Procedures drop down 
+	will be removed. For Regaffairs, there is no Department drop down.
+	   [2 hrs]
+
+ 4. For Admin users.
+	* There should be an option to set a flag to set that a file expires,
+	  which will make that file not to be displayed in regular user's searches, until Admin user resets it again.
+	   [2 hrs]
+    * The Upload page has to be modified from what it was shown in the demo. 
+	  The top section should be removed (which lets the user to copy the entire file path and upload). 
+	  The option to choose file should be active only when a user selects a Department and it should also enable 
+	  the user to select multiple files at the same time.
+	  
+    * The program should be responsible to move the file(s) from the location the user chooses to the actual share where all the files reside.
+    
+	* The upload function will also contain a check box to let the Admin user to give their consent to overwrite the files 
+	  if the file already exists in the destination.
+      If the check box is not selected, the system will display a message box that a file cannot be overwritten.
+	  
+    * The admin user should have the ability to delete a file that is no longer needed in the system.
+      This should delete from the file share as well as from the database (pointers)
+	  
+    * The admin needs to have the option/ability to rename an existing file. 
+	  This function should then rename the file in the file share as well as update database pointers.
+	  [6 hrs]
+**********************************************************************************************************************************
+Web App [Post Demo]
+-------------------
+ > In the search page, when I hit enter or click on search, then it wont work
+ > Browser cache
+ > Fil upload results background and increase text font 
+ > File expire/unexpire testing with different cases
+ > Cross-browser compatibility [Chrome,Firefox and IE] Chrome,Firefox - working fine
+ > Page scrolling
+	admin  - logo is fixed but should be scrolled
+ > Grid width should be increased [40%]
+    and every row font size should be increased [increae 2 ]
+ > Include checkbox to show/hide expired files or drop down [default : exclude expired files]
+ > Show id in order for normal users
+ > Rename single ro
+     - display filename only 
+	 - Enable single filename editable
+	 - Disable others 
+	 - User may switch to other files
+ > Add confirmation box for delete functionality [looks like warning box]
+ > Stress the file operations upload, delete, rename [Add current tab and highlight, boldigy heading]
+ > Remove logout option
+ > How to capture for username for logged in users ?
+ 
+    
+
+
+
+
+**********************************************************************************************************************************	  
+
+Desktop App Changes 
+-------------------
+ 1. Replace all queries with stored procedures [Display the rows in resultset order]
+ 2. Dynamic result message for copy and delete functionalities 
+ 3. Failure message for Add and Edit functionalities 
+ 4. Add Export to CSV button in View Tab  [file name with date[mmddYYYY] extension] 
+ 5. Crate new tab Add [Columns in current order]
+ 
